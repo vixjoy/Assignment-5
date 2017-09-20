@@ -120,5 +120,30 @@ angular.module('listings').controller('ListingsController', ['$scope', '$locatio
       },
       zoom: 14
     }
-  }
+
+
+//
+//     $scope.findMarkers = function(){
+//       /* set loader*/
+//       $scope.loading = true;
+//
+//       /* Get all the listings, then bind it to the scope */
+//       Listings.getAll().then(function(response) {
+//         $scope.loading = false; //remove loader
+//         $scope.myMarkers = [];
+//
+//
+//         for(var i = 0; i < response.data.length; i++){
+//           if(response.data.coordinates){
+//             $scope.myMakers.push(response.data);
+//           }
+//         }
+//       }, function(error) {
+//         $scope.loading = false;
+//         $scope.error = 'Unable to retrieve listings!\n' + error;
+//       });
+//     };
+//
+
+}
 ]);
